@@ -49,7 +49,7 @@ let activeTile = undefined;
 let enemyCount = 3
 let enemySpeed = 1
 let hearts = 20
-let coins = 20000;
+let coins = 100;
 
 const explosions = []
 spawnEnemies(enemyCount, enemySpeed);
@@ -125,7 +125,7 @@ function animate() {
                     })
 
                     if (enemyIndex > -1) {
-                        coins += 10
+                        coins += 25
                         document.querySelector('.coins').innerHTML = coins;
                         enemies.splice(enemyIndex, 1)
                     }
